@@ -1,0 +1,15 @@
+{% load extra_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'django_menu/style.css' %}">
+        <script async src="{% static 'django_menu/fold.js' %}"></script>
+    </head>
+    <body>
+    {% block content %}
+    {% endblock %}
+    {% show_menu 'root 1'%}
+    {% show_menu 'root 2'%}
+    </body>
+</html>

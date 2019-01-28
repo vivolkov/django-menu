@@ -1,0 +1,4 @@
+graft static
+graft templates
+graft templatetags
+include README.rst

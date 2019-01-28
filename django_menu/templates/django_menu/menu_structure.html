@@ -1,0 +1,13 @@
+{% load extra_tags %}
+<div class="large">
+{% for element in context %}
+    <a href="#{{element.url}}" class="toggler">{{ element.text }}</a>
+        <ul id="{{ element.url }}" class="inner">
+            {% if not element.subs.count__isnull %}
+            {% for i in element.subs.all %}
+                {% show_menu i.text %}
+            {% endfor %}
+        {% endif %}
+        </ul>
+{% endfor %}
+</div>

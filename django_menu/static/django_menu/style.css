@@ -1,0 +1,8 @@
+.explicit {
+    visibility:visible;
+}
+
+.invisible {
+    visibility:hidden;
+    opacity:none;   
+}
